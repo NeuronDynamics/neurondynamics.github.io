@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuron Dynamics | NimbleBI</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border);
+            padding: 1.25rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--primary); }
+        .hero {
+            max-width: 900px;
+            margin: 4rem auto 2rem;
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: #0f172a;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: var(--primary);
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+        }
+        .grid {
+            max-width: 900px;
+            margin: 3rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            padding: 0 1.5rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.75rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #0f172a;
+        }
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        .card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        footer {
+            max-width: 900px;
+            margin: 4rem auto 2rem;
+            padding: 2rem 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+        footer .links {
+            margin-bottom: 1rem;
+        }
+        footer .links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 0.75rem;
+        }
+        footer .links a:hover { color: var(--primary); }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <span>⚡</span> Neuron Dynamics
+        </a>
+        <nav>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="data-deletion.html">Data Deletion</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <span class="badge">Enterprise Intelligence</span>
+            <h1>NimbleBI by Neuron Dynamics</h1>
+            <p>Empowering intelligent conversational business intelligence across enterprise messaging channels including WhatsApp, Microsoft Teams, and cloud data platforms.</p>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Privacy Policy</h3>
+                <p>Read our commitment to user privacy, data security, and compliance with global privacy regulations.</p>
+                <a href="privacy.html">Read Policy &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Terms of Service</h3>
+                <p>Review the terms and conditions governing the use of NimbleBI applications and services.</p>
+                <a href="terms.html">View Terms &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>User Data Deletion</h3>
+                <p>Instructions on how you can request the deletion of your personal data and conversation history.</p>
+                <a href="data-deletion.html">View Instructions &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="data-deletion.html">User Data Deletion</a>
+        </div>
+        <p>&copy; 2026 Neuron Dynamics. All rights reserved.</p>
+        <p style="margin-top: 0.25rem;">Contact: <a href="mailto:420558513@qq.com" style="color: inherit;">420558513@qq.com</a></p>
+    </footer>
+</body>
+</html>
